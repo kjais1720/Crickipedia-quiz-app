@@ -27,6 +27,10 @@ main{
     margin-right: auto;
 }
 
+.hide{
+    display: none;
+}
+
 .txt-accent{
     color: var(--tr-accent-color);
 }
@@ -46,6 +50,11 @@ main{
 
 /* Header  */
 
+.tr-header{
+    border-radius: 0;
+    margin-bottom: 2rem;
+}
+
 .logo{
     width: clamp(15rem, 20vw, 20rem);
 }
@@ -62,6 +71,40 @@ main{
 .header-menu{
     flex: 1;
 }
+
+/* Wave pattern  */
+.wave {
+    position: absolute;
+    height: 4rem;
+    width: 100vw;
+    background: var(--tr-primary-color);
+    bottom: -2rem;
+    left: 0;
+    z-index: -1;
+}
+  
+  .wave::before, .wave::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+  }
+  
+  .wave::before {
+    width: 55%;
+    height: 109%;
+    background-color: var(--tr-background);
+    right: -1.5%;
+    top: 60%;
+  }
+  .wave::after {
+    width: 55%;
+    height: 100%;
+    background-color: var(--tr-primary-color);
+    left: -1.5%;
+    top: 40%;
+  }
+
 
 /* Icons  */
 
