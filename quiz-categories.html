@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crickipedia</title>
+    <link rel="shortcut icon" href="/assets/favicon.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="/stylesheets/pages/categories.css">
+</head>
+
+<body>
+    <header class="tr-header p-rel d-flex justify-c-space-between f-wrap">
+        <div class="wave"></div>
+        <div class="tr-heading d-flex">
+            <a href='/' class='logo'>
+                <img src='/assets/logo.png' alt="Crickipedia logo">
+            </a>
+        </div>
+        <div class="header-menu d-flex justify-c-space-between">
+            <div class="tr-input-wrapper d-flex gap-sm">
+                <input type="text" aria-label="Search Quizzes" class="tr-input-item" placeholder="Search Quizzes">
+                <button class="tr-btn tr-btn-icon">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <nav class="tr-nav d-flex gap-sm">
+                <a href="/pages/profile.html" class="tr-btn tr-btn-link">Profile</a>
+                <a href="/pages/quizzes.html" class="tr-btn tr-btn-link">Quizzes</a>
+                <button data-target="rules-modal" class="tr-btn tr-btn-link">Rules</button>
+            </nav>
+        </div>
+
+        <button class="tr-btn tr-btn-icon hamburger">
+            <i class="fas fa-bars"></i>
+        </button>
+
+    </header>
+
+    <main class="flex-col justify-c-center pd-xlg">
+        <h2 class="txt-primary txt-center">Quizzes by category</h2>
+        <div class="tabs-btn-list p-rel d-flex">
+            <button class="tr-btn active tr-btn-tab tr-btn-transparent" data-target="category-1">IPL Quiz</button>
+            <button class="tr-btn tr-btn-tab tr-btn-transparent" data-target="category-2">T20 WC Quiz</button>
+            <button class="tr-btn tr-btn-tab tr-btn-transparent" data-target="category-3">CWC Quiz</button>
+            <button class="tr-btn tr-btn-tab tr-btn-transparent" data-target="category-4">WTC Quiz</button>
+            <div class="bottom-border"></div>
+        </div>
+
+        <div id="category-1" class="tab d-grid grid-autofit-md justify-i-center gap-sm pd-md">
+            <article class="tr-card light-shadow flex-col gap-md">
+                <div class="tr-card-banner">
+                    <img src="/assets/IPL.jpg" alt="IPL Logo">
+                </div>
+
+                <div class="flex-col justify-c-space-between">
+                    <div class="tr-card-header">
+                        <h2 class="title">Batting Stats Quiz</h2>
+                        <h3 class="txt-secondary">IPL Quiz</h3>
+                    </div>
+                    <div class="tr-card-footer-links flex-col gap-sm">
+                    
+                        <div class="d-flex justify-c-space-between">
+                            <small><i class="fas fa-file"></i> 5 questions</small>
+                            <small> <i class="fas fa-clock"></i> 5 minutes</small>
+                        </div>
+                        <button class="tr-btn tr-btn-primary">Attempt Quiz</button>
+                    </div>
+                </div>
+            </article>
+            <article class="tr-card light-shadow flex-col gap-md">
+                <div class="tr-card-banner">
+                    <img src="/assets/IPL.jpg" alt="IPL Logo">
+                </div>
+                <div class="flex-col justify-c-space-between">
+                    <div class="tr-card-header">
+                        <h2 class="title">Bowling Stats Quiz</h2>
+                        <h3 class="txt-secondary">IPL Quiz</h3>
+                    </div>
+                    <div class="tr-card-footer-links flex-col gap-sm">
+                    
+                        <div class="d-flex justify-c-space-between">
+                            <small><i class="fas fa-file"></i> 5 questions</small>
+                            <small> <i class="fas fa-clock"></i> 5 minutes</small>
+                        </div>
+                        <button class="tr-btn tr-btn-primary">Attempt Quiz</button>
+                    </div>
+                </div>
+            </article>
+            <article class="tr-card light-shadow flex-col gap-md">
+                <div class="tr-card-banner">
+                    <img src="/assets/IPL.jpg" alt="IPL Logo">
+                </div>
+                <div class="flex-col justify-c-space-between">
+                    <div class="tr-card-header">
+                        <h2 class="title">General Quiz</h2>
+                        <h3 class="txt-secondary">IPL Quiz</h3>
+                    </div>
+                    <div class="tr-card-footer-links flex-col gap-sm">
+                    
+                        <div class="d-flex justify-c-space-between">
+                            <small><i class="fas fa-file"></i> 5 questions</small>
+                            <small> <i class="fas fa-clock"></i> 5 minutes</small>
+                        </div>
+                        <button class="tr-btn tr-btn-primary">Attempt Quiz</button>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+        <div id="category-2" class="tab hide d-flex hide">
+
+        </div>
+        <div id="category-3" class="tab hide d-flex hide">
+
+        </div>
+        <div id="category-4" class="tab hide d-flex hide">
+
+        </div>
+    </main>
+
+    <footer>
+        <ul class="d-flex footer-links">
+            <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/kjais1720"
+                class="tr-btn tr-btn-icon">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/kjais1720" class="tr-btn tr-btn-icon">
+                <i class="fab fa-github"></i>
+            </a>
+            <a target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/krituraj-anand"
+                class="tr-btn tr-btn-icon">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </ul>
+        <p class="copywright txt-primary">Created by
+            <a target="_blank" rel="noopener noreferrer"
+                href="https://kjais-portfolio.vercel.app" class="tr-btn tr-btn-link">
+                Krituraj Anand
+            </a>
+        </p>
+    </footer>
+
+    <button class="theme-toggle-btn tr-btn tr-btn-fab">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+    </script>
+    <script src="../index.js"></script>
+</body>
+
+</html>

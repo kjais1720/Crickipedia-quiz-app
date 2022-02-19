@@ -1,0 +1,70 @@
+@import url(../base.css);
+
+.main-demo-content {
+    flex: 1 1 70%;
+    flex-direction: column;
+    gap: var(--space-sm);
+    max-width: 100%;
+    overflow: auto;
+    align-items: center;
+    position: relative;
+    min-height: 70vh;
+}
+
+.tabs-btn-list {
+    box-shadow: var(--bs-lighter);
+    width: 100%;
+    overflow-x: auto;
+}
+
+.tabs-btn-list .tr-btn {
+    border-radius: 0;
+    flex: 1 0 250px;
+    background: var(--tr-background-lighter);
+}
+
+.tabs-btn-list .tr-btn:hover {
+    background-color: hsla(180, 65%, 48%, 0.2);
+}
+
+.tabs-btn-list .tr-btn:focus {
+    background-color: var(--tr-accent-overlay);
+    box-shadow: none;
+}
+
+.tabs-btn-list .tr-btn.active {
+    border-color: transparent;
+    background-color: hsla(180, 65%, 48%, 0.2);
+}
+
+.tab {
+    flex-grow: 1;
+    padding: var(--space-md);
+    padding: clamp(var(--space-xs), -0.875rem + 8.33vw, var(--space-lg));
+    width: 100%;
+    position: relative;
+    overflow: auto;
+
+}
+
+
+.bottom-border {
+    background-color: var(--tr-accent-color);
+    bottom: 0;
+    height: 3px;
+    left: 0;
+    position: absolute;
+    transition: all ease 0.3s;
+    width: 25%;
+}
+
+.tr-card{
+    justify-self: center;
+    align-self: stretch;
+    justify-content: space-between;
+    background: var(--tr-background-lighter);
+}
+
+.tr-card >.flex-col{
+    flex: 1;
+}
