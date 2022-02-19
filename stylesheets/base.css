@@ -1,0 +1,99 @@
+@import url('https://tarang-ui.netlify.app/stylesheets/main.css');
+body{
+    --bs-lighter:2px 2px 10px 2px rgb(0 0 0 / 20%);
+    --fluid-padding-lg: var(--space-sm) clamp(var(--space-sm), -0.875rem + 8.33vw, var(--space-xxlg));
+    background-color: var(--tr-background);
+    color: var(--tr-text);
+    overflow: hidden scroll;
+}
+
+header,
+main{
+    padding: var(--fluid-padding-lg);
+}
+
+/* Utilities  */
+
+.light-shadow{
+    box-shadow: var(--bs-lighter);
+}
+
+.bg-transparent{
+    background-color: transparent;
+}
+
+.mr-x-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.txt-accent{
+    color: var(--tr-accent-color);
+}
+
+.txt-white{
+    color: var(--tr-white);
+}
+
+.theme-toggle-btn{
+    background-color: var(--tr-text);
+    color: var(--tr-background);
+    bottom: 25px;
+    right: 5px;
+    z-index: 999;
+}
+
+
+/* Header  */
+
+.logo{
+    width: clamp(15rem, 20vw, 20rem);
+}
+
+.tr-header .tr-input-wrapper{
+    margin-left: auto;
+    width: clamp(15rem, 30vw, 30rem);
+}
+
+.hamburger{
+    display: none;
+}
+
+.header-menu{
+    flex: 1;
+}
+
+/* Icons  */
+
+.tr-btn-icon i.fas{
+    font-weight: 500 ;
+}
+
+
+/* Footer  */
+
+footer {
+    min-height: 20vh;
+    margin-top: var(--space-xlg);
+    padding-top: var(--space-md);
+    background-color: var(--tr-background);
+    border-top-left-radius: 50% 20%;
+    border-top-right-radius: 50% 20%;
+    text-align: center;
+}
+
+
+.footer-links {
+    gap: var(--space-md);
+    justify-content: center;
+}
+
+.footer-links .tr-btn {
+    font-size: var(--fs-lg);
+    color: var(--tr-accent-color);
+}
+
+footer p {
+    margin-top: var(--space-md);
+}
+
