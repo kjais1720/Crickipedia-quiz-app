@@ -25,3 +25,44 @@ themeToggleBtn.addEventListener('click', ()=> {
 })
 
 setTheme();
+
+// To fire the alert for the given amount of time 
+const fireAlert = duration => {
+    const alert = document.querySelector('.tr-alert')
+    alert.classList.remove('hide');
+    setTimeout(()=>alert.classList.add('hide'), duration)
+}
+
+// Code to change the width and color of the timerbar of the questions 
+const decimalToHexa = num => Number(num).toString(16);
+
+const changeWidthAndColorWithTime = timeLeft => {
+    const timerBar = document.querySelector('.time-indicator-bar');
+    const timer = document.querySelector('.ques-info .timer');
+    timer.innerText = timeLeft;
+    let timerColor = '00ff00';
+    let timerWidth = 100;
+    let redHex = 0;
+    let greenHex = 255;
+    const changeWidthBy = Math.ceil(100 / timeLeft);
+    const changeHexBy = Math.floor(255 / timeLeft);
+    const timerId = setInterval(()=>{
+        if(timeLeft<=0) {
+            clearInterval(timerId);
+            fireAlert(5000)
+        }
+        else{
+            timeLeft--;
+            timer.innerText=timeLeft;
+            greenHex -= changeHexBy;
+            redHex += changeHexBy;
+            timerWidth -= changeWidthBy;
+            timerColor = `#${decimalToHexa(redHex)+decimalToHexa(greenHex)}00`
+            timerBar.style.backgroundColor = timerColor;
+
+            if(timerWidth < 0) timerBar.style.width = 0;
+            
+            else timerBar.style.width = timerWidth+'%';
+        }
+    },1000)
+}
