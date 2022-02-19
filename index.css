@@ -1,0 +1,59 @@
+@import url(https://tarang-ui.netlify.app/stylesheets/main.css);
+
+.tr-header{
+    border-radius: 0;
+}
+
+main{
+    padding: 0;
+    margin-bottom: 5rem;
+}
+
+.container {
+    position: relative;
+    background: var(--tr-primary-color);
+  }
+  
+  .wave {
+    position: absolute;
+    height: 5rem;
+    width: 100%;
+    background: var(--tr-primary-color);
+    bottom: -5rem;
+  }
+  
+  .wave::before, .wave::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+  }
+  
+  .wave::before {
+    width: 55%;
+    height: 109%;
+    background-color: var(--tr-background);
+    right: -1.5%;
+    top: 60%;
+  }
+  .wave::after {
+    width: 55%;
+    height: 100%;
+    background-color: var(--tr-primary-color);
+    left: -1.5%;
+    top: 40%;
+  }
+
+.hero{
+    padding: var(--fluid-padding-lg);
+}
+
+.hero .hero-text-body{
+    flex: 1 1 40rem;
+}
+
+.hero .hero-banner{
+    flex: 1 1 20rem;
+    position: relative;
+    z-index: 1;
+}
