@@ -3,7 +3,7 @@
 
 .quiz-question-wrapper{
     width: 90%;
-    max-width: 500px;
+    max-width: 32rem;
     border-radius: var(--space-xs);
     gap: var(--space-xlg);
     transition: background-color 0s;
@@ -21,10 +21,9 @@
 
 .question-label{
     border-radius: var(--space-xs);
-    top: -20px;
-    padding: 5px 20px;
+    top: calc(-1 * var(--space-md));
+    padding: var(-space-xs) var(--space-md);
     color: var(--tr-background);
-    /* background: var(--tr-primary-lighter); */
 }
 
 .ques-options .d-flex{
