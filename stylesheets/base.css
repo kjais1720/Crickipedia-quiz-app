@@ -22,6 +22,10 @@ main{
     background-color: transparent;
 }
 
+.gap-xs{
+    gap: var(--space-xs);
+}
+
 .mr-x-auto{
     margin-left: auto;
     margin-right: auto;
@@ -29,6 +33,10 @@ main{
 
 .hide{
     display: none;
+}
+
+.tr-input-item{
+    background: var(--tr-background);
 }
 
 .txt-accent{

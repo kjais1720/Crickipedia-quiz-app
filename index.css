@@ -2,6 +2,7 @@
 
 .tr-header{
     border-radius: 0;
+    margin-bottom: 0;
 }
 
 main{
@@ -11,8 +12,9 @@ main{
 
 /* wave pattern  */
 .wave {
-height: 5rem;
-bottom: -5rem;
+    height: 5rem;
+    bottom: -5rem;
+    z-index: unset;
 }
   
 .hero{
