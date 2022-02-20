@@ -1,4 +1,7 @@
 @import url('https://tarang-ui.netlify.app/stylesheets/main.css');
+html{
+    scroll-behavior: smooth;
+}
 body{
     --bs-lighter:2px 2px 10px 2px rgb(0 0 0 / 20%);
     --fluid-padding-lg: var(--space-sm) clamp(var(--space-sm), -0.875rem + 8.33vw, var(--space-xxlg));
@@ -18,8 +21,20 @@ main{
     box-shadow: var(--bs-lighter);
 }
 
-.bg-transparent{
-    background-color: transparent;
+.bg-success{
+    background-color: var(--tr-success);
+}
+
+.bg-error{
+    background-color: var(--tr-error);
+}
+
+.bg-warn{
+    background-color: var(--tr-warn);
+}
+
+.bg-lighter{
+    background-color: var(--tr-background-lighter);
 }
 
 .gap-xs{
