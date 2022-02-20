@@ -1,0 +1,15 @@
+@import url(./quiz.css);
+
+.score-section{
+    min-height: 30vh;
+    margin: var(--space-xlg) auto;
+    width: 90%;
+    max-width: 32rem;
+    box-shadow: var(--bs-lighter);
+    border-radius: var(--space-xs);
+}
+
+.quiz-question-wrapper .tr-btn{
+    pointer-events: none;
+}
+

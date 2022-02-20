@@ -22,7 +22,7 @@
 .question-label{
     border-radius: var(--space-xs);
     top: calc(-1 * var(--space-md));
-    padding: var(-space-xs) var(--space-md);
+    padding: var(--space-xs) var(--space-md);
     color: var(--tr-background);
 }
 
