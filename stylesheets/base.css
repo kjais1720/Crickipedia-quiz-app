@@ -135,6 +135,26 @@ main{
     font-weight: 500 ;
 }
 
+/* Rules Modal  */
+
+.tr-modal-wrapper{
+    position: fixed;
+    inset: 0;
+    z-index: 999;
+}
+
+.rules-modal{
+    width: 90%;
+    max-width: 35rem;
+    padding: var(--space-xlg);
+}
+
+.tr-modal-close-btn{
+    position: absolute;
+    top: 1.25rem;
+    right: 2rem;
+}
+
 
 /* Footer  */
 

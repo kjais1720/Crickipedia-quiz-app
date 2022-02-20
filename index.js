@@ -1,3 +1,4 @@
+// To set the theme 
 const setTheme = () => {
     let darkModeIsSelected = localStorage.getItem('isDarkMode');
     const themeToggleBtn = document.querySelector('.theme-toggle-btn');
@@ -14,6 +15,7 @@ const setTheme = () => {
         }
     }
 }
+
 
 const themeToggleBtn = document.querySelector('.theme-toggle-btn');
 themeToggleBtn.addEventListener('click', ()=> {
@@ -66,3 +68,12 @@ const changeWidthAndColorWithTime = timeLeft => {
         }
     },1000)
 }
+
+const toggleClassOfTarget = (togglerBtnId, toggleClass) =>{
+    const togglerBtn = document.getElementById(togglerBtnId);
+    const target = document.getElementById(togglerBtn.getAttribute('data-target'));
+    togglerBtn.addEventListener('click', () => target.classList.toggle(toggleClass) );
+}
+
+toggleClassOfTarget('modal-btn', 'hide');
+toggleClassOfTarget('modal-close-btn', 'hide');
