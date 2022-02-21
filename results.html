@@ -30,7 +30,7 @@
             <nav class="tr-nav d-flex gap-sm">
                 <a href="/results.html" class="tr-btn tr-btn-link">Results</a>
                 <a href="/quiz-categories.html" class="tr-btn tr-btn-link">Quizzes</a>
-                <button data-target="rules-modal" class="tr-btn tr-btn-link">Rules</button>
+                <button data-target="rules-modal-wrapper" id="modal-btn" class="tr-btn tr-btn-link">Rules</button>
             </nav>
         </div>
 
@@ -158,6 +158,36 @@
             </a>
         </p>
     </footer>
+    <article id="rules-modal-wrapper" data-target="rules-modal-wrapper" class="tr-modal-wrapper d-flex flex-center hide">
+        <div class="tr-modal-box rules-modal pd-lg flex-col">
+            <div class="tr-modal-text flex-col">
+                <h2 class="txt-center txt-primary">Rules</h2>
+
+                <ol class="flex-col">
+                    <li>
+                        Lorem ipsum dolor sit amet error fugiat magnam amet maxime quasi ipsum quas
+                    </li>
+                    <li>
+                        Lorem ipsum dolor sit amet error fugiat magnam amet maxime quasi ipsum quas
+                    </li>
+                    <li>
+                        Lorem ipsum dolor sit amet error fugiat magnam amet maxime quasi ipsum quas
+                    </li>
+                    <li>
+                        Lorem ipsum dolor sit amet error fugiat magnam amet maxime quasi ipsum quas
+                    </li>
+                    <li>
+                        Lorem ipsum dolor sit amet error fugiat magnam amet maxime quasi ipsum quas
+                    </li>
+                </ol>
+
+            </div>
+
+            <button data-target="rules-modal-wrapper" id="modal-close-btn" class="tr-modal-close-btn tr-btn tr-btn-icon">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </article>
 
     <button class="theme-toggle-btn tr-btn tr-btn-fab">
         <i class="fas fa-moon"></i>
