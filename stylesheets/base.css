@@ -91,7 +91,7 @@ main{
     display: none;
 }
 
-.header-menu{
+.header-menu f-wrap{
     flex: 1;
 }
 
@@ -183,3 +183,21 @@ footer p {
     margin-top: var(--space-md);
 }
 
+@media screen and (max-width: 48em){
+    .tr-header{
+        justify-content: center;
+    }
+    .header-menu{
+        gap: var(--space-xs);
+    }
+
+    .header-menu .tr-input-wrapper,
+    .header-menu .tr-nav
+    {
+        width: 100%;
+    }
+
+    .tr-nav{
+        justify-content: space-between;
+    }
+}
